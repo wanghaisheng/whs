@@ -8,6 +8,8 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    environment: 
+      name: production    
     steps:
       - uses: lowlighter/metrics@latest
         with:
